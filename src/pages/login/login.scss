@@ -1,0 +1,60 @@
+.bgImage{
+  //display: block;
+  background: url(../../assets/imgs/bgImage.jpg) 50% 50% no-repeat;
+  position: absolute;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+.loginDetails{
+  position: absolute;
+  bottom: 0vh;
+}
+
+.login,.signUp{
+  background: transparent;
+  color: #fff;
+  border:1px solid #fff;
+  width: 100%;
+  border-radius: 3px;
+  text-transform: none;
+  height: 50px;
+
+}
+
+.googlePlus{
+  background-color: #DD4B39;
+  border-radius: 3px;
+  text-transform: none;
+  height: 50px;
+
+}
+.facebook{
+  background-color: #3B5998;
+  border-radius: 3px;
+  text-transform: none;
+  height: 50px;
+
+}
+
+
+.fontalign{
+  left: 12px;
+  position: fixed;
+}
+
+.TOC{
+  text-decoration: underline;
+  white-space:nowrap;
+}
+
+.policy{
+  color: #ffffff;
+  position: relative;
+  text-align: center;
+}
+
+.space50{
+  height:50px;
+}

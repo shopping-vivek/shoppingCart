@@ -1,0 +1,21 @@
+npm install --save @ionic-native/barcode-scanner
+<ion-content padding>
+  <h2>Welcome to NEW world of Online Shopping!</h2>
+  <p>
+    This starter project comes with barcode scanner
+  </p>
+
+
+  <p *ngIf="showScanQRCode" class="scanText">Click the Button to Scan.</p>
+  <div *ngIf="scannedData !=undefined" class="scanCode">
+    <p>Welcome to QRCODE Scanner</p>
+    <br>
+    <p>{{scannedData}}</p>
+  </div>
+
+  <ion-footer>
+    <button style="margin-bottom: 35px !important;" ion-button full (click)="openScanner()">Scan Code</button>
+  </ion-footer>
+
+
+</ion-content>

@@ -1,0 +1,65 @@
+<img class="bgImage">
+
+<ion-title class="pageTitle">{{navParams.get('pageTitle') }}</ion-title>
+<button ion-button (click)="closeModal()" class="backButton"><i class="fa fa-angle-left"></i><span class="paddingLeft15">Back</span></button>
+
+<span *ngIf="navParams.get('pageTitle') == 'Log In'" class="formStyles">
+  <ion-list class="opacity">
+
+  <ion-item>
+    <ion-input type="text" placeholder="Username" [(ngModel)]="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+</ion-list>
+  <ion-row>
+  <ion-col text-center>
+    <button class="login" ion-button (click)="login()">
+      Log in
+    </button>
+  </ion-col>
+</ion-row>
+  <ion-row class="space50"></ion-row>
+
+</span>
+<span *ngIf="navParams.get('pageTitle') == 'Sign Up'" class="formStyles">
+  <ion-list class="opacity">
+
+  <ion-item>
+    <ion-input type="text" placeholder="Username"></ion-input>
+  </ion-item>
+    <ion-item>
+    <ion-input type="email" placeholder="Email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input type="password" placeholder="Password"></ion-input>
+  </ion-item>
+    <ion-item>
+    <ion-input type="password" placeholder="Confirm Password"></ion-input>
+  </ion-item>
+
+</ion-list>
+  <ion-row>
+  <ion-col text-center>
+    <button class="signUp" ion-button >
+      Sign Up
+    </button>
+  </ion-col>
+</ion-row>
+  <ion-row class="space50"></ion-row>
+
+</span>
+
+<span class="loginDetails">
+
+  <ion-row class="space50"></ion-row>
+<ion-row>
+  <p class="policy">
+By signing up you agree to the <span class="TOC"> Terms of Service </span> and <span class="TOC"> Privacy Policy </span>
+  </p>
+</ion-row>
+</span>

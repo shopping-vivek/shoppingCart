@@ -1,0 +1,25 @@
+page-home {
+
+}
+
+.pageTitle{
+  text-align: center;
+  position: relative;
+  top: 5vh;
+
+  -webkit-text-fill-color: #fff;
+}
+
+.scanText{
+  text-align: center;
+  position: sticky;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.scanCode{
+  display: block;
+  text-align: center;
+  margin-top: 50%;
+}

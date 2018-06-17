@@ -1,0 +1,35 @@
+<img class="bgImage">
+<span class="loginDetails">
+<ion-row>
+  <ion-col text-center>
+    <button ion-button block class="googlePlus" (click)="onGoogle()">
+     <i class="fa fa-google-plus fontalign"></i>  Google
+    </button>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col text-center>
+    <button ion-button block class="facebook" (click)="onFacebook()">
+      <i class="fa fa-facebook-f fontalign"></i> Facebook
+    </button>
+  </ion-col>
+</ion-row>
+<ion-row>
+  <ion-col text-center>
+    <button class="signUp" ion-button (click)="openModal('Sign Up')">
+      Sign Up
+    </button>
+  </ion-col>
+  <ion-col text-center>
+    <button class="login" ion-button  (click)="openModal('Log In')">
+      Log in
+    </button>
+  </ion-col>
+</ion-row>
+  <ion-row class="space50"></ion-row>
+<ion-row>
+  <p class="policy">
+By signing up you agree to the <span class="TOC"> Terms of Service </span> and <span class="TOC"> Privacy Policy </span>
+  </p>
+</ion-row>
+</span>
